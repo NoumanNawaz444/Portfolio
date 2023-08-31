@@ -161,6 +161,21 @@ nav .toggle_day_night img {
 .hero_section .content h1 {
   margin-bottom: 20px;
 }
+.hero_section .content button{
+  height: 35px;
+  width: 120px;
+  background: linear-gradient(to right , orangered , tomato);
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.hero_section .content button a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
 .hero_section .image {
   width: calc(100% / 2 - 20px);
   margin: 10px;
