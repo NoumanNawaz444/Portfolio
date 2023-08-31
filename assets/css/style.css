@@ -320,6 +320,56 @@ nav .toggle_day_night img {
   }
 }
 
+/* skills */
+
+.skills{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.skills .card{
+  width: calc(100% / 3 - 20px);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
+  text-align: center;
+  border:  2px solid #fff;
+}
+.skills .card img{
+  width: 100%;
+  border-radius: 4px;
+}
+@media screen and (max-width:900px) {
+  .skills{
+    width: 100%;
+  }
+  .skills .card{
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media screen and (max-width:500px) {
+  .skills{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .skills::-webkit-scrollbar{
+    visibility: hidden;
+  }
+  .skills .card{
+    min-width: calc(100% - 60px);
+  }
+  .skills .card h1{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
 /* services */
 
 .Services {

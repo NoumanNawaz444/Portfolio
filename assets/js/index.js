@@ -42,6 +42,8 @@ let testimonial_heading = document.getElementById('testimonial_heading')
 let testimonial = document.getElementById('testimonial')
 let contact_heading = document.getElementById('contact_heading')
 let foooter = document.getElementById('foooter')
+let skill_heading = document.getElementById('skill_heading')
+let skills = document.getElementById('skills')
 
 day_night.addEventListener('click' , day_night_toggle)
 
@@ -56,6 +58,8 @@ function day_night_toggle(){
     services_heading.classList.toggle('day_night_hero')
     contact_heading.classList.toggle('day_night_hero')
     testimonial_heading.classList.toggle('day_night_hero')
+    skills.classList.toggle('day_night_hero')
+    skill_heading.classList.toggle('day_night_hero')
     body.classList.toggle('bg_black')
     foooter.classList.toggle('day_night_toggle')
 }
