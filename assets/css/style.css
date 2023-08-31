@@ -396,7 +396,6 @@ nav .toggle_day_night img {
   box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.5);
   border: 2px solid white;
   border-radius: 5px;
-  cursor:grab;
 }
 .Services .card h2 {
   margin-bottom: 10px;
