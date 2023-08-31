@@ -361,6 +361,7 @@ nav .toggle_day_night img {
   }
   .skills .card{
     min-width: calc(100% - 60px);
+    max-width: calc(100% - 60px);
   }
   .skills .card h1{
     font-size: 1.5rem;
