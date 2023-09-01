@@ -161,6 +161,20 @@
   .intro .content h1{
     margin-bottom: 10px;
   }
+  .intro .content button{
+    height: 35px;
+    width: 120px;
+    margin-top: 10px;
+    background: linear-gradient(to right , orangered , tomato);
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+  .intro .content button a{
+    text-decoration: none;
+    color: white;
+  }
   .intro .image{
     width: calc(100% / 2 - 20px);
   }
@@ -214,6 +228,7 @@
     border: 2px solid white;
     border-radius: 3px;
     padding: 10px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
   }
   .education .card img{
     width: 100%;
@@ -251,6 +266,63 @@
   }
 
 
+  
+/* skills */
+
+.skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+  .skills .card{
+    width: calc(100% / 3 - 20px);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
+    text-align: center;
+    border:  2px solid #fff;
+    border-radius: 3px;
+
+  }
+  .skills .card img{
+    width: 100%;
+    border-radius: 4px;
+  }
+  @media screen and (max-width:1280px) {
+    .skills{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:900px) {
+    .skills .card{
+        width: calc(100% / 2 - 20px);
+      }
+  }
+  @media screen and (max-width:500px) {
+    .skills{
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+    .skills::-webkit-scrollbar{
+      visibility: hidden;
+    }
+    .skills .card{
+      min-width: calc(100% - 60px);
+      max-width: calc(100% - 60px);
+    }
+    .skills .card h1{
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+  
+
+
   /* hobies_heading */
 
   .hobies_heading{
@@ -282,6 +354,7 @@
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
+    padding: 40px 10px;
   }
   .hobby .card{
     width: calc(100% / 3 - 20px);
@@ -290,6 +363,7 @@
     text-align: center;
     border: 2px solid white;
     border-radius: 3px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
   }
   .hobby .card img{
     width: 100%;
@@ -319,9 +393,104 @@
         max-width: calc(100% - 70px);
     }
   }
-  @media screen and (max-width:305px) {
+  @media screen and (max-width:322px) {
     
     .hobby .card h2{
         font-size: 1.2rem;
+    }
+  }
+
+
+  /* interest */
+
+  .Interest{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 40px 10px;
+  }
+  .Interest .card{
+    min-width: calc(100% / 3 - 20px);
+    max-width: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+  }
+  .Interest .card img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  @media screen and (max-width:1280px) {
+    .Interest{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:830px) {
+    .Interest .card{
+        min-width: calc(100% / 2 - 20px);
+        max-width: calc(100% / 2 - 20px);
+    }
+  }
+  @media screen and (max-width:540px) {
+    .Interest{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .Interest::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    .Interest .card{
+        min-width: calc(100%  - 40px);
+        max-width: calc(100%  - 40px);
+    }
+  }
+  @media screen and (max-width:310px) {
+    .Interest .card h3{
+        font-size: 1rem;
+    }
+  }
+
+  
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    text-align: center;
+    background: linear-gradient(to right , orangered ,  tomato);
+    margin-bottom: 0;
+    padding:10px  20px;
+    background: white;
+    color: black;
+    box-shadow: 0 0 6px 0 rgb(9, 9, 9,.5);
+  }
+  footer .social_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .social_links a{
+    text-decoration: none;
+    color: black;
+  }
+  footer .social_links a ion-icon{
+    font-size: 35px;
+    margin: 5px ;
+  }
+  @media screen and (max-width:390px) {
+    footer .social_links a ion-icon{
+      font-size: 25px;
+    }
+    footer h2{
+      font-size: 1.3rem;
     }
   }
