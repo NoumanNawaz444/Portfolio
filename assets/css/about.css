@@ -195,6 +195,59 @@
     }
   }
 
+  /* .education */
+
+  .education{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+  }
+  .education .card{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  .education .card img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width:1280px) {
+    .education{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:875px) {
+    .education .card{
+        width: calc(100% / 2 - 20px);
+    }
+  }
+  @media screen and (max-width:576px) {
+    .education{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .education::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    .education .card{
+        min-width: calc(100% - 50px);
+        max-width: calc(100% - 50px);
+    }
+  }
+  @media screen and (max-width:330px) {
+    .education .card h2{
+        font-size: 1.2rem;
+    }
+  }
+
 
   /* hobies_heading */
 
@@ -234,6 +287,7 @@
     padding: 10px;
     text-align: center;
     border: 2px solid white;
+    border-radius: 3px;
   }
   .hobby .card img{
     width: 100%;

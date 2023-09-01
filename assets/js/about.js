@@ -33,6 +33,8 @@ let body = document.getElementById('root')
 let intro = document.getElementById('intro')
 let hobies_heading = document.getElementById('hobies_heading')
 let hobby = document.getElementById('hobby')
+let edu_heading = document.getElementById('edu_heading')
+let edu = document.getElementById('edu')
 
 
 
@@ -43,6 +45,8 @@ function day_night_toggle_about(){
     body.classList.toggle('bg_black')
     intro.classList.toggle('bg_dark');
     hobies_heading.classList.toggle('bg_dark');
+    edu_heading.classList.toggle('bg_dark');
     hobby.classList.toggle('bg_dark');
+    edu.classList.toggle('bg_dark');
 
 }
