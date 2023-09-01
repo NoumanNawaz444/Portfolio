@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Dancing Script", cursive;
+      font-family: "Lobster", cursive;
+      font-family: "Montserrat", sans-serif;
+      font-family: "Phudu", cursive; */
+    font-family: "Poppins", sans-serif;
+  }
+  .bg_black {
+    background: black;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    box-shadow: 0 0 6px 0 rgb(5, 5, 5, 0.5);
+    background: #fff;
+    position: relative;
+    max-width: 100%;
+  }
+  nav h2 a{
+    color: black;
+  }
+  body .day_night_toggle {
+    filter: invert();
+  }
+  nav #ham {
+    height: 35px;
+    width: auto;
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
+  nav ul #cross {
+    height: 35px;
+    width: auto;
+    display: none;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 5px 10px;
+    transition: .3s;
+    border-radius: 4px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  nav ul li:hover{
+    background: rgb(128, 128, 128,.5);
+  }
+  nav .toggle_day_night {
+    height: 40px;
+    width: 40px;
+    outline: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  nav .toggle_day_night img {
+    height: 100%;
+    width: auto;
+  }
+  @media screen and (max-width: 800px) {
+    nav .main_ul {
+      position: absolute;
+      top: 0px;
+      left: 0px !important;
+      opacity: 0;
+      pointer-events: none;
+      height: 100vh !important;
+      min-width: 100%;
+    }
+    nav .main_ul ul {
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: calc(100% - 20px);
+      transition: 0.07s ease-in-out;
+      flex-wrap: wrap;
+      background-color: rgb(0, 0, 0);
+      padding: 40px 20px;
+      border-radius: 10px;
+      z-index: 999;
+      position: relative;
+      top: 50px;
+      left: 10px;
+    }
+    nav ul #cross {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      filter: invert();
+    }
+    nav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-transform: uppercase;
+    }
+    nav #ham {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    nav {
+      padding: 10px 10px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    nav h2 {
+      font-size: 1.2rem;
+    }
+    nav #ham {
+      height: 30px;
+    }
+    nav .main_ul {
+      top: 0;
+      height: 100vh !important;
+      z-index: 999 !important;
+    }
+    nav .toggle_day_night {
+      height: 30px !important;
+      width: 30px;
+    }
+  }
+
+  
+  /* intro */
+
+ 
+  .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+  .bg_dark{
+    background: black;
+    color: white;
+  }
+  .intro .content{
+    width: calc(100% / 2  - 20px);
+  }
+  .intro .content h1{
+    margin-bottom: 10px;
+  }
+  .intro .image{
+    width: calc(100% / 2 - 20px);
+  }
+  .intro .image img{
+    width: 100%;
+  }
+  @media screen and (max-width:1280px) {
+    .intro{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:1020px) {
+    .intro .content{
+        width: 100%;
+    }
+    .intro .image{
+        width: 100%;
+        margin-top: 10px;
+    }
+  }
+  @media screen and (max-width:370px) {
+    .intro .content h1{
+        font-size: 1.7rem;
+    }
+  }
+  @media screen and (max-width:310px) {
+    .intro .content h1{
+        font-size: 1.5rem;
+    }
+    .intro .content p{
+        font-size: .8rem;
+    }
+  }
+
+
+  /* hobies_heading */
+
+  .hobies_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .hobies_heading h1{
+    position: relative;
+    margin-bottom: 15px;
+    font-family: cursive;
+  }
+  .hobies_heading h1::before{
+    content: '';
+    height: 5px ;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right , orange , teal , blue , tomato);
+    bottom: -10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+
+  .hobby{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .hobby .card{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+  }
+  .hobby .card img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width:1280px) {
+    .hobby{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width:830px) {
+    .hobby .card{
+        width: calc(100% / 2 - 20px);
+    }
+  }
+  @media screen and (max-width:510px) {
+    .hobby{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .hobby::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    .hobby .card{
+        min-width: calc(100% - 70px);
+        max-width: calc(100% - 70px);
+    }
+  }
+  @media screen and (max-width:305px) {
+    
+    .hobby .card h2{
+        font-size: 1.2rem;
+    }
+  }
