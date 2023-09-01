@@ -27,6 +27,9 @@ function navgya(){
 }
 
 
+// dark mod
+
+
 let day_night = document.getElementById('day_night')
 let main_nav = document.getElementById('main_nav')
 let body = document.getElementById('root')
@@ -40,6 +43,7 @@ let skills = document.getElementById('skills')
 let interest_heading = document.getElementById('interest_heading')
 let Interest = document.getElementById('Interest')
 let foooter = document.getElementById('foooter')
+let contact_heading = document.getElementById('contact_heading')
 
 
 
@@ -54,6 +58,7 @@ function day_night_toggle_about(){
     edu_heading.classList.toggle('bg_dark');
     skill_heading.classList.toggle('bg_dark');
     interest_heading.classList.toggle('bg_dark');
+    contact_heading.classList.toggle('bg_dark');
     hobby.classList.toggle('bg_dark');
     edu.classList.toggle('bg_dark');
     skills.classList.toggle('bg_dark');

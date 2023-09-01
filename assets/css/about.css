@@ -457,6 +457,118 @@
     }
   }
 
+
+  
+  
+  /* contact */
+  
+  .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  .form{
+    width: calc(100% / 2 - 20px);
+    background: linear-gradient(to right , orangered , tomato);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .form h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .form form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .form form input{
+    height: 45px;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgb(255, 255, 255,0.9);
+  }
+  .form form .short_in{
+    width: calc(100% / 2 - 10px);
+  }
+  .form form textarea{
+    min-width: calc(100% - 10px);
+    max-width:calc(100% - 10px)  ;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255,0.9);
+  }
+  .form form textarea::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .form form .button{
+    margin: 5px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background: white;
+    color: orangered;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .contact .image{
+    width: calc(100% / 2 - 20px);
+  }
+  .contact .image img{
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width:1060px) {
+    .contact{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:860px) {
+    .contact{
+      flex-direction: column-reverse;
+    }
+    .contact .form{
+      width: 100%;
+    }
+    .contact .image{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:390px) {
+    .form h1{
+      font-size: 2rem;
+    }
+    .form {
+      padding: 20px 10px;
+    }
+    .form form .short_in{
+      width: 100%;
+    }
+  }
+  
   
 /* footer */
 
