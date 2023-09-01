@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Montserrat:ital,wght@0,700;0,900;1,600;1,700;1,900&family=Phudu&family=Poppins&family=Sedgwick+Ave+Display&display=swap"
         rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="stylesheet" href="./assets/css/contact.css">
     <title>Contact | Nouman N.</title>
 </head>
@@ -50,8 +52,10 @@
 
         <div class="content">
             <h1>"Let's Connect and Create Something Amazing Together: Reach Out to Nouman Nawaz"</h1>
-            <p>"Ready to collaborate? I'm just a click away! Whether you're interested in discussing a project, exploring partnership opportunities, or simply want to chat about the exciting world of web development, I'm all ears. Feel free to drop me a message and let's start turning ideas into reality."</p>
-                <button><a href="mailto:noumannawazwork@gmail.com">Contact Now</a></button>
+            <p>"Ready to collaborate? I'm just a click away! Whether you're interested in discussing a project,
+                exploring partnership opportunities, or simply want to chat about the exciting world of web development,
+                I'm all ears. Feel free to drop me a message and let's start turning ideas into reality."</p>
+            <button><a href="mailto:noumannawazwork@gmail.com">Contact Now</a></button>
         </div>
 
         <div class="image">
@@ -77,14 +81,14 @@
             <h1>Get In Touch</h1>
 
 
-            <form action="mailto:noumannawazwork@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="Name" placeholder="Name" class="short_in" required>
-                <input type="email" name="Email" placeholder="Email" class="short_in" required>
-                <input type="text" name="Subject" placeholder="Subject" required>
-                <textarea name="Message" cols="30" rows="5" placeholder="Message"></textarea>
-                <button type="submit">Submit Now</button>
+            <form action="https://formspree.io/f/xbjvydkj" method="post">
+                <input type="text" name="Name" placeholder="Name" class="short_in" required id="name">
+                <input type="email" name="Email" placeholder="Email" class="short_in" required id="email">
+                <input type="text" name="Subject" placeholder="Subject" required id="subject">
+                <textarea name="Message" cols="30" rows="5" placeholder="Message" id="message"></textarea>
+                <input type="submit" id="button"  value="SUBMIT NOW" class="button">
             </form>
-            
+
         </div>
 
         <div class="image">
@@ -106,15 +110,20 @@
 
             <a href="https://wa.me/+923208527322"><ion-icon name="logo-whatsapp"></ion-icon></a>
             <a href="https://www.instagram.com/code.wizardsit/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://web.facebook.com/profile.php?id=100087962186070"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://web.facebook.com/profile.php?id=100087962186070"><ion-icon
+                    name="logo-facebook"></ion-icon></a>
 
         </div>
-        
+
     </footer>
 
 
 </body>
+
+
+
 <script src="./assets/js/contact.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </html>

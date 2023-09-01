@@ -516,7 +516,7 @@
     top: 10px;
     left: 10px;
   }
-  .form form button{
+  .form form .button{
     margin: 5px;
     height: 35px;
     width: 120px;
