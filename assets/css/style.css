@@ -330,6 +330,7 @@ nav .toggle_day_night img {
   margin: auto;
   flex-wrap: wrap;
   padding: 20px;
+  transition: .4s ease-in-out;
 }
 .skills .card{
   width: calc(100% / 3 - 20px);

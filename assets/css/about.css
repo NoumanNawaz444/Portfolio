@@ -229,6 +229,7 @@
     border-radius: 3px;
     padding: 10px;
     box-shadow: 0 0 6px 0 rgb(0, 0, 0,.3);
+    transition: .2s ease-in-out;
   }
   .education .card img{
     width: 100%;
