@@ -146,9 +146,10 @@ nav .toggle_day_night img {
   width: 90%;
   padding: 40px 20px;
   align-items: center;
-  background: white;
   flex-wrap: wrap;
   margin: auto;
+  position: relative;
+  top: 3px;
 }
 .day_night_hero {
   background: black;
