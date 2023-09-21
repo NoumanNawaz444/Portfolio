@@ -130,7 +130,6 @@ nav .toggle_day_night img {
   nav .main_ul {
     top: 0;
     height: 100vh !important;
-    z-index: 9999;
   }
   nav .toggle_day_night {
     height: 30px !important;
@@ -150,6 +149,7 @@ nav .toggle_day_night img {
   margin: auto;
   position: relative;
   top: 3px;
+  z-index: -1;
 }
 .day_night_hero {
   background: black;
