@@ -64,9 +64,59 @@ function day_night_toggle(){
 
 
 
-// footer_year
 
-let footer_year = document.getElementById('footer_year')
-footer_year.style.margin = '0 5px'
 
-footer_year.innerText = new Date().getFullYear()
+window.addEventListener("scroll" , scrollAll)
+
+
+function scrollAll(){
+
+    let windowHeight = window.innerHeight / 5 * 4
+
+    let aboutHeading = document.querySelectorAll('.about_heading')
+
+    aboutHeading.forEach((aboutHead)=>{
+        let aboutHeadTop = aboutHead.getBoundingClientRect().top ;
+
+        if(aboutHeadTop < windowHeight){
+            aboutHead.classList.add('top')
+        }else{
+            aboutHead.classList.remove('top')
+        }
+    })
+    
+
+    let aboutUs = about_us.getBoundingClientRect().top ;
+
+    if(aboutUs < windowHeight){
+        about_us.classList.add('top')
+    }else{
+        about_us.classList.remove('top')
+    }
+
+    let contact_us = document.getElementById('contact')
+
+    let contactUS = contact_us.getBoundingClientRect().top ;
+
+    if(contactUS < windowHeight){
+        contact_us.classList.add('top')
+    }else{
+        contact_us.classList.remove('top')
+    }
+
+    let cards = document.querySelectorAll('.card')
+
+    cards.forEach((card)=>{
+        let cardTop = card.getBoundingClientRect().top;
+
+        if(cardTop < windowHeight){
+            card.classList.add('top')
+        }
+        else{
+            card.classList.remove('top')
+        }
+    })
+}
+
+
+
