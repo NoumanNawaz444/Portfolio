@@ -14,7 +14,7 @@ function navaya(){
 cross.addEventListener('click' , navgya)
 
 function navgya(){
-    mobile_nav.style.left = '-500%';
+    mobile_nav.style.left = '-600%';
 }
 
 

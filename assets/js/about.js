@@ -6,24 +6,15 @@ let cross = document.getElementById('cross')
 ham.addEventListener('click' , navaya)
 
 function navaya(){
-    mobile_nav.style.opacity = 1 ;
-    mobile_nav.style.width = '100%';
-    mobile_nav.style.height = '100vh';
-    mobile_nav.style.left = '0px';
+    mobile_nav.style.left = '0';
     mobile_nav.style.pointerEvents = 'all';
-    mobile_nav.style.top = 0 ;
 }
 
 
 cross.addEventListener('click' , navgya)
 
 function navgya(){
-    mobile_nav.style.width = '100%';
-    mobile_nav.style.height = '100vh';
-    mobile_nav.style.opacity = 0 ;
-    mobile_nav.style.left = '0px';
-    mobile_nav.style.top = 0 ;
-    mobile_nav.style.pointerEvents = 'none'
+    mobile_nav.style.left = '-600%';
 }
 
 
