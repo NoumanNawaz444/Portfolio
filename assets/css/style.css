@@ -119,6 +119,7 @@ nav .toggle_day_night img {
 @media screen and (max-width: 450px) {
   nav {
     padding: 10px 10px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -198,6 +199,11 @@ nav .toggle_day_night img {
   .hero_section .image {
     width: 100%;
     margin: 0;
+  }
+}
+@media screen and (max-width:450px) {
+  .hero_section{
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 385px) {
