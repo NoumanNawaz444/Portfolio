@@ -88,8 +88,8 @@
     pointer-events: all;
     height: 100vh ;
     min-width: 100%;
-    transition: 1s ease-in-out;
-  }
+    transition: .8s ease-in-out;
+    background: linear-gradient(to bottom , rgb(255, 255, 255 , .3) , rgb(255, 255, 255));  }
   nav .main_ul .colorLayer{
     display: block;
     height: 100%;

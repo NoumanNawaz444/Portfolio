@@ -78,13 +78,14 @@ nav .main_ul .colorLayer{
   
   nav .main_ul {
     position: absolute;
-    top: 0px;
+    top: 0px !important;
     left: -700% ;
     opacity: 1;
     pointer-events: all;
     height: 100vh ;
     min-width: 100%;
-    transition: 1s ease-in-out;
+    transition: .8s ease-in-out;
+    background: linear-gradient(to bottom , rgb(255, 255, 255 , .3) , rgb(255, 255, 255));
   }
   nav .main_ul .colorLayer{
     display: block;
@@ -267,10 +268,6 @@ nav .main_ul .colorLayer{
   background: white;
   padding: 20px 0;
   text-align: center;
-  /* border-top: 4px solid teal;
-  border-left: 4px solid orange;
-  border-right: 4px solid tomato;
-  border-bottom: 4px solid blue; */
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
