@@ -23,6 +23,7 @@
 
 <body id="root">
 
+    <div class="main_circle_layers"></div>
     <!-- navbar -->
 
 
@@ -125,6 +126,13 @@
 
 
 <script src="./assets/js/contact.js"></script>
+<script>
+    let mcl = document.querySelector('.main_circle_layers')
+
+    setTimeout(() => {
+        mcl.style.top = '-150%'
+    }, 2500);
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
