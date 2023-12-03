@@ -22,7 +22,6 @@
     z-index: 9999999999999;
     animation: mcl 1.4s ease ;
     transition: 1.5s;
-    overflow: hidden;
   }
   .main_circle_layers::before {
     content: '';
@@ -40,7 +39,7 @@
     content: 'Going To Contact';
     display: block;
     height: 100vh;
-    width: 100%;
+    width: calc(100% - 40px);
     background: orange;
     position: absolute;
     z-index: 9999999999999;
