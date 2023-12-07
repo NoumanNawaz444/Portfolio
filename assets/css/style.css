@@ -8,6 +8,24 @@
     font-family: "Phudu", cursive; */
   font-family: "Poppins", sans-serif;
 }
+body::after {
+  content: "";
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: purple;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  top: var(--y);
+  left: var(--x);
+  transition: .1s;
+}
+@media (hover: none) {
+  body::after {
+      display: none;
+  }
+}
 
 .bg_black {
   background: black;
@@ -22,29 +40,8 @@
   top: 0;
   left: 0;
   z-index: 9999999999999;
-  animation: mcl 1.4s ease ;
-  transition: 1.5s;
-}
-.main_circle_layers::before {
-  content: '';
-  display: block;
-  height: 100vh;
-  width: 100%;
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999999999999;
-  animation: mcl 1.8s ease ;
-}
-.main_circle_layers::after {
-  content: 'Welcome Home';
-  height: 100vh;
-  width: calc(100% - 40px);
-  background: orange;
-  position: absolute;
-  z-index: 9999999999999;
-  animation: mcl 2.3s ease ;
+  /* animation: mcl 2s ease  ; */
+  transition: 2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,19 +50,34 @@
   font-weight: 900;
   padding: 20px 20px;
   text-align: center;
+}
+.main_circle_layers::-webkit-scrollbar{
+  display: none;
+}
+.main_circle_layers::before {
+  content: '';
+  display: block;
+  height: 100vh;
+  width: 20%;
+  background: blue;
+  position: absolute;
   top: 0;
+  left: 100%;
+  z-index: -4;
+}
+.main_circle_layers::after {
+  content: '';
+  height: 100vh;
+  width: 20%;
+  background: orange;
+  position: absolute;
+  z-index: 9999999999999;
+  top: 0;
+  left: 120%;
 }
 @media screen and (max-width:400px) {
-  .main_circle_layers::after{
+  .main_circle_layers{
     font-size: 2.1rem;
-  }
-}
-@keyframes mcl {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
   }
 }
 
